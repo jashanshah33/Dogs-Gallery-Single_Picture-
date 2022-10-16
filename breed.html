@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Dogs by Bread</title>
+    <style>
+        #top{
+            height: 25vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background:linear-gradient(45deg, rgb(218, 240, 249), rgb(248, 239, 223))
+        }
+        #dropbox{
+            min-height: 43px;
+            min-width: 150px;
+            font-size: 20px;
+
+        }
+        #img-btn{
+            font-size: 22px;
+            cursor: pointer;
+
+        }
+        #bottom{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 75%;
+        }
+        .img-container{
+            height: 90%;
+            width: 50vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #next_btn{
+            background-color: white;
+            color: skyblue;
+            border: 2px solid rgb(204, 204, 204);
+            font-size: 25px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        #dog-Img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <div id="top">
+        <select id="dropbox">
+            <!-- <option id="option" value="">dog</option>
+            <option value="">cat</option> -->
+            
+
+        </select>
+
+        <button id="img-btn">Get Image</button>
+    </div>
+
+    <div id="bottom">
+        <div class="img-container">
+        <img id="dog-Img">
+         </div>
+        <div id="next_btn">
+            Next >></div>
+    </div>
+    
+  
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="breed.js"></script>
+</body>
+</html>
